@@ -140,7 +140,7 @@ canvas{display:block;width:100%;height:auto;aspect-ratio:16/10;cursor:crosshair;
 const W=960,H=600,CELL=400,COLS=6,ROWS=4,WW=COLS*CELL+100,WH=ROWS*CELL+100;
 const TAU=Math.PI*2;
 const cv=document.getElementById('cv'),ctx=cv.getContext('2d');
-const DPR=Math.min(2,window.devicePixelRatio||1);
+const DPR=Math.min(1.5,window.devicePixelRatio||1);
 cv.width=W*DPR;cv.height=H*DPR;
 const $=id=>document.getElementById(id);
 const rnd=(a,b)=>a+Math.random()*(b-a),ri=(a,b)=>Math.floor(rnd(a,b+1)),pick=a=>a[Math.floor(Math.random()*a.length)];
